@@ -1,30 +1,24 @@
 # blog2speech
 
-Create a speech audio file from Taisuke Fukuno's blog.
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-## usage
+Generate speech audio files from Taisuke Fukuno's blog.
 
-Set the OpenAI API key in the .env file.
+## Features
+- Generate speech audio files from Taisuke Fukuno's blog posts
+- Supports multiple voice styles
 
+## Requirements
+- OpenAI API key set in the `.env` file
+
+## Usage
 ```sh
 deno run -A blog2speech.js 4325 echo
 ```
 
-## sample
+## Data / API
+- OpenAI API
+- Taisuke Fukuno's blog (Rensa)
 
-- [echo](https://code4fukui.github.io/blog2speech/fukuno_blog_4325_echo.mp3)
-- [alloy](https://code4fukui.github.io/blog2speech/fukuno_blog_4325_alloy.mp3)
-- [echo](https://code4fukui.github.io/blog2speech/fukuno_blog_4325_echo.mp3)
-- [fable](https://code4fukui.github.io/blog2speech/fukuno_blog_4325_fable.mp3)
-- [onyx](https://code4fukui.github.io/blog2speech/fukuno_blog_4325_onyx.mp3)
-- [nova](https://code4fukui.github.io/blog2speech/fukuno_blog_4325_nova.mp3)
-- [shimmer](https://code4fukui.github.io/blog2speech/fukuno_blog_4325_shimmer.mp3)
-
-- [otoya by mac](https://code4fukui.github.io/blog2speech/fukuno_blog_4325_otoya.mp3)
-
-## say
-
-```sh
-say -f 4325.txt -v Otoya -o temp.aac
-ffmpeg -i temp.aac fukuno_blog_4325_otoya.mp3
-```
+## License
+MIT License — see [LICENSE](LICENSE).
